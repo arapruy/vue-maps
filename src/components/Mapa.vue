@@ -1,12 +1,9 @@
 <template>
   <div class="hello">
-    <h1>Austria Map</h1>
-    <p>
-      Please click a state to view state properties
-    </p>
-    <div>
+    <v-card v-if="show" elevation="2">
+      ola
+    </v-card>
       <map-container v-on:map-clicked="onMapClick"/>
-    </div>
   </div>
 </template>
 
@@ -20,6 +17,16 @@ export default {
   props: {
     msg: String
   },
+  data: () => ({
+    show: false,
+  }),
+
+  methods: {
+    onMapClick: function(){
+      this.show = true
+      }
+    }
+  /**
   methods: {
     onMapClick: function(attr){
       this.$notify({
@@ -28,6 +35,6 @@ export default {
         text: `You clicked on state with id: ${attr.mapId} and title: ${attr.title}`
       });
     }
-  }
+  }**/
 }
 </script>

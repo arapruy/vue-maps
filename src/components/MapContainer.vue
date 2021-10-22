@@ -11,7 +11,7 @@ export default {
       svgId: "corrientesMap",
       mapAttr: {
         viewBoxWidth: 1106,
-        viewBoxHeight: 500,
+        viewBoxHeight: 1106,
         imageWidth: 1106,
         imageHeight: 500,
       },
