@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import svgJs from "./plugin/vueSvgPlugin"
+import svgJs from "./plugins/vueSvgPlugin"
 import Notifications from 'vue-notification'
 
 Vue.use(svgJs);
