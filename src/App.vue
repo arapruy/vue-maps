@@ -1,13 +1,28 @@
 <template>
-  <div>
-    <map-container/>
+  <div id="app">
+    <notifications group="map" />
+    <mapa/>
   </div>
 </template>
 
 <script>
-import MapContainer from "./components/MapContainer"
+import Mapa from './components/Mapa.vue'
 
 export default {
-  components: {MapContainer}
+  name: 'app',
+  components: {
+    Mapa
+  }
 }
 </script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
